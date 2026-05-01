@@ -14,14 +14,14 @@ const Navbar = () => {
             to="/"
             className="flex-shrink-0 font-bold text-xl text-blue-600 hover:text-blue-700 transition-colors"
           >
-            Deborah Secular
+            Yovel Amir
           </Link>
 
           <div
             id="logo"
             className="flex-shrink-0 font-bold text-xl text-blue-600"
           >
-            Portfolio
+            My Compeny Logo
           </div>
           <div id="nav-links" className="hidden md:flex space-x-8">
             <NavLink to="/">Home</NavLink>
