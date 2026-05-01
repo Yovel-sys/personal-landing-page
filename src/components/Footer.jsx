@@ -8,8 +8,7 @@ const Footer = () => {
         className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4"
       >
         <div id="footer-info" className="text-gray-500 text-sm">
-          © {new Date().getFullYear()} Professional Portfolio. All rights
-          reserved.
+          © {new Date().getFullYear()} Yovel Amir. All rights reserved.
         </div>
         <div id="footer-socials" className="flex space-x-6">
           <SocialLink href="https://github.com" label="GitHub" />
