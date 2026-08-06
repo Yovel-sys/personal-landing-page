@@ -3,21 +3,25 @@ const Modal = ({isOpen, onClose, children}) => {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 sm:p-8 backdrop-blur-sm"
       onClick={onClose}
     >
       <div
         id="modal-content"
-        className="relative max-w-5xl w-full"
-        onClick={(e) => e.stopPropagation()} // מונע מהקליק לסגור את המודאל כשלוחצים על התוכן
+        className="relative flex flex-col items-center justify-center max-w-full max-h-full"
+        onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute -top-10 right-0 text-white text-3xl hover:text-gray-300"
+          className="absolute -top-12 -right-2 sm:-right-10 text-white text-4xl hover:text-gray-300 transition-colors p-2 z-[60]"
+          aria-label="Close modal"
         >
           &times;
         </button>
-        {children}
+
+        <div className="relative overflow-hidden rounded-lg shadow-2xl">
+          {children}
+        </div>
       </div>
     </div>
   );
